@@ -5,14 +5,16 @@
       <router-link to="/about">About</router-link>
     </div>
     <el-button type="primary">测试按需引入</el-button>
-    <div class="bg-red"></div>
+    <div class="bg-red">{{ env }}</div>
     <el-calendar />
     <router-view />
   </el-config-provider>
 </template>
 
 <script setup lang="ts">
+import { Ref, ref } from "@vue/reactivity";
 import zhCn from "element-plus/lib/locale/lang/zh-cn";
+const env: Ref = ref(process.env.VUE_APP_ENV);
 </script>
 
 <style lang="scss">

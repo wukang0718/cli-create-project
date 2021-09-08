@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const pkg = require("./package.json");
+process.env.VUE_APP_VERSION = pkg.version;
+process.env.VUE_APP_DATE_TIME = new Date().toLocaleString();
+
 module.exports = {
   css: {
     loaderOptions: {
