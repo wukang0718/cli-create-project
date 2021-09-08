@@ -8,7 +8,9 @@
     "build:t": "vue-cli-service build --mode t",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "cz": "cz",
+    "commit": "git add . && cz"
   },
   "dependencies": {
     "core-js": "^3.6.5",
