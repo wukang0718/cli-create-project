@@ -1,34 +1,66 @@
 # cli-create-project
 
-## Project setup
-```
-yarn install
-```
+## 已经配置的库
 
-### Compiles and hot-reloads for development
-```
+Vue3 + element-plus + axios + husky + jest + cypress + commitizen + validate-commit-msg + conventional-changelog-cli
+
+## 项目启动
+### 开发环境
+
+```bash
+yarn install
 yarn serve
 ```
+### 链接测试服务的启动方式
 
-### Compiles and minifies for production
+```bash
+yarn serve --mode t
 ```
+
+## 项目打包
+
+### 测试环境
+
+```bash
+yarn build:t
+```
+在 `deployment/test` 会生成 `nginx` 配置文件 `default.cong`
+
+### 生产环境
+
+```bash
 yarn build
 ```
+在 `deployment/prod` 会生成 `nginx` 配置文件 `default.cong`
 
-### Run your unit tests
-```
-yarn test:unit
-```
+## 运行测试
 
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
+### eslint
 
-### Lints and fixes files
-```
+```bash
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### jest单元测试
+
+```bash
+yarn test:unit
+```
+
+### cypress端到端的测试
+
+```bash
+yarn test:e2e
+```
+
+## 代码提交
+
+```bash
+yarn commit
+```
+
+## 生成 changelog
+
+```bash
+yarn changelog
+```
