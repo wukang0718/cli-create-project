@@ -1,5 +1,9 @@
 <template>
   <el-config-provider :locale="zhCn">
+    <div>
+      <h1>请求的内容</h1>
+      <div>{{ result }}</div>
+    </div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -14,7 +18,12 @@
 <script setup lang="ts">
 import { Ref, ref } from "@vue/reactivity";
 import zhCn from "element-plus/lib/locale/lang/zh-cn";
+import { aService } from "@/axios";
 const env: Ref = ref(process.env.VUE_APP_ENV);
+const result = ref("");
+aService.get("/get").then(({ data }) => {
+  result.value = data;
+});
 </script>
 
 <style lang="scss">

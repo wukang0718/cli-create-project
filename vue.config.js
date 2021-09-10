@@ -15,4 +15,24 @@ module.exports = {
       },
     },
   },
+  devServer: {
+    proxy: {
+      "/aServer": {
+        target: process.env.VUE_APP_A_BASE_URL,
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: {
+          "/aServer": "",
+        },
+      },
+      "/bServer": {
+        target: process.env.VUE_APP_B_BASE_URL,
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: {
+          "/bServer": "",
+        },
+      },
+    },
+  },
 };
