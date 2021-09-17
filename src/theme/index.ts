@@ -15,10 +15,5 @@ export default (app: App): void => {
   app.use(ElCalendar);
   app.use(ElConfigProvider);
   app.use(ElContainer);
-  app.use(ElContainer.ElHeader);
-  app.use(ElContainer.ElAside);
-  app.use(ElContainer.ElMain);
   app.use(ElMenu);
-  app.use(ElMenu.ElMenuItem);
-  app.use(ElMenu.ElSubMenu);
 };

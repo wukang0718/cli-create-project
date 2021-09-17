@@ -223,7 +223,7 @@ const getMenu = (menu, parentMenu = "/") => {
   const route = parentMenu + menu.name;
   return {
     name: menu.title,
-    route: parentMenu + menu.name,
+    route: menu.redirect || parentMenu + menu.name,
     icon: menu.icon,
     children: children.length
       ? children.map((item) => getMenu(item, `${route}/`))
