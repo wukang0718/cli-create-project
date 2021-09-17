@@ -1,0 +1,17 @@
+[
+    {
+        "name": "项目列表",
+        "route": "/project",
+        "children": null
+    },
+    {
+        "name": "测试集列表",
+        "route": "/test",
+        "children": null
+    },
+    {
+        "name": "测试结果列表",
+        "route": "/result",
+        "children": null
+    }
+]

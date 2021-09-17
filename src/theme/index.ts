@@ -1,6 +1,12 @@
 import { App } from "vue";
 import "dayjs/locale/zh-cn";
-import { ElButton, ElCalendar, ElConfigProvider } from "element-plus";
+import {
+  ElButton,
+  ElCalendar,
+  ElConfigProvider,
+  ElContainer,
+  ElMenu,
+} from "element-plus";
 import "./index.scss";
 
 export default (app: App): void => {
@@ -8,4 +14,11 @@ export default (app: App): void => {
   app.use(ElButton);
   app.use(ElCalendar);
   app.use(ElConfigProvider);
+  app.use(ElContainer);
+  app.use(ElContainer.ElHeader);
+  app.use(ElContainer.ElAside);
+  app.use(ElContainer.ElMain);
+  app.use(ElMenu);
+  app.use(ElMenu.ElMenuItem);
+  app.use(ElMenu.ElSubMenu);
 };

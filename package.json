@@ -13,7 +13,8 @@
     "commit": "git add . && cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "gennginx:t": "node ./deployment/genNginxConf.js t",
-    "gennginx:prod": "node ./deployment/genNginxConf.js prod"
+    "gennginx:prod": "node ./deployment/genNginxConf.js prod",
+    "create:module": "node ./scripts/create-module/create-module.js"
   },
   "dependencies": {
     "axios": "^0.21.4",
@@ -43,7 +44,7 @@
     "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^6.7.2",
+    "eslint": "^7.32.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
     "husky": "^7.0.0",

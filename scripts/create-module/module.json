@@ -1,0 +1,43 @@
+[
+  {
+    "name": "project",
+    "title": "项目列表",
+    "redirect": "/project/index",
+    "children": [
+      {
+        "name": "index",
+        "title": "项目列表",
+        "show": false
+      },
+      {
+        "name": "lookTests",
+        "title": "查看关联项目集",
+        "show": false
+      }
+    ]
+  },
+  {
+    "name": "test",
+    "title": "测试集列表",
+    "redirect": "/test/index",
+    "children": [
+      {
+        "name": "index",
+        "title": "测试集列表",
+        "show": false
+      }
+    ]
+  },
+  {
+    "name": "result",
+    "title": "测试结果列表",
+    "redirect": "/result/index",
+    "children": [
+      {
+        "name": "index",
+        "title": "测试结果列表",
+        "show": false
+      }
+    ]
+  }
+]
